@@ -1,1 +1,2 @@
 # car_app
+Developing a simple web-app to compare info from US car advertisements. An interactive histogram comparing conditions of different types of vehicles is included as well as a scatterplot showing the relationship between price and condition, also filtered by type.
