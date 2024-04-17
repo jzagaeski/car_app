@@ -23,5 +23,5 @@ if normalize:
     histnorm = 'percent'
 else:
     histnorm = None
-car_hist = px.histogram(car_filtered, x='condition', nbins=35, color='type', histnorm=histnorm, barmode='overlay'))
+car_hist = px.histogram(car_filtered, x='condition', nbins=35, color='type', histnorm=histnorm, barmode='overlay')
 st.write(car_hist)
