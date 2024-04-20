@@ -1,6 +1,8 @@
-# car_app
-Developing a simple web-app to compare info from US car advertisements. An interactive histogram comparing conditions of different types of vehicles is included as well as a scatterplot showing the relationship between price and condition, also filtered by type. 
-In order to launch this web-app please copy and paste this link   into your web browser.
+# Welcome All!
+Hello and welcome to my repository! I will be building a simple web-app to compare info from US car advertisements. A histogram comparing conditions of different types of vehicles is included as well as a scatterplot showing the relationship between price and condition which is also filtered by type. 
+In order to launch this web-app please copy and paste the following link into your web browser.
+https://car-app-fin.onrender.com/
+Thank you for taking the time to view my repository!
 
 
 # for reviewer
