@@ -9,9 +9,9 @@ st.header('Vehicle condition relative to price by type')
 car_scat = px.scatter(cars_df, x='condition', y='price', color='type')
 st.write(car_scat)
 st.header('Compare vehicle condition by type')
-car_hist = px.histogram(cars_df, x='condition', nbins=35, color='type', histshow=histshow, barmode='overlay')
+car_hist = px.histogram(cars_df, x='condition', nbins=35, color='type', barmode='overlay')
 show = st.checkbox(label='show histogram', value=True)
 if show:
-    histshow = st.write(car_hist)
+    st.write(car_hist)
 else:
-    histshow = None
+    None
