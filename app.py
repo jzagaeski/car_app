@@ -9,9 +9,10 @@ st.header('Vehicle condition relative to price by type')
 car_scat = px.scatter(cars_df, x='condition', y='price', color='type')
 st.write(car_scat)
 st.header('Compare vehicle condition by type')
-type_list = sorted(cars_df['type'].unique())
-type = st.selectbox(label='Select type', options= type_list, index= type_list.index('SUV'))
-mask_filter = (cars_df['type'] == type)
-car_filtered = cars_df[mask_filter]
-car_hist = px.histogram(car_filtered, x='condition', nbins=35, color='type', barmode='overlay')
+normalize = st.checkbox(label='normalize histogram', value=True)
+if normalize:
+    histnorm = 'percent',
+else:
+    histnorm = None
+car_hist = px.histogram(cars_df, x='condition', nbins=35, color='type', histnorm=histnorm, barmode='overlay')
 st.write(car_hist)
